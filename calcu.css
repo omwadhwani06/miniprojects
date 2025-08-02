@@ -1,0 +1,86 @@
+body {
+    background: #ccb9b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.calcu {
+    width: 400px;
+    background-color: #06030a;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.output {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(112, 103, 90);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.output:hover {
+    border: 2px solid red;
+    transition: 0.3s ease-in-out;
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.btn {
+    flex: 1 0 22%;
+    margin: 5px 5px;
+    height: 60px;
+    background-color: rgb(99, 90, 90);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.control {
+    background-color: rgb(233, 205, 205);
+    color: black;
+}
+
+.btn:hover {
+    background-color: rgb(202, 36, 36);
+    transition: 0.3s;
+}
+
+@media (max-width: 480px) {
+    .calcu {
+        width: 95%;
+    }
+
+    .btn {
+        flex: 1 0 21%;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    .output {
+        height: 80px;
+        font-size: 1.5rem;
+    }
+}
